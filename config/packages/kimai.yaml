@@ -111,15 +111,15 @@ kimai:
         # mapping a "role name" to an array of "set names"
         maps:
             ROLE_USER: ['TIMESHEET','PROFILE']
-            ROLE_TEAMLEAD: ['ACTIVITIES_TEAMLEAD','PROJECTS_TEAMLEAD','CUSTOMERS_TEAMLEAD','TIMESHEET_OTHER','INVOICE','TIMESHEET','PROFILE','EXPORT','BILLABLE','TAGS','REPORTING']
-            ROLE_ADMIN: ['ACTIVITIES','PROJECTS','CUSTOMERS','INVOICE','INVOICE_ADMIN','TIMESHEET','TIMESHEET_OTHER','PROFILE','TEAMS','RATE','RATE_OTHER','EXPORT','BILLABLE','TAGS','LOCKDOWN','REPORTING']
-            ROLE_SUPER_ADMIN: ['ACTIVITIES','PROJECTS','CUSTOMERS','INVOICE','INVOICE_ADMIN','TIMESHEET','TIMESHEET_OTHER','PROFILE','PROFILE_OTHER','USER','TEAMS','RATE','RATE_OTHER','EXPORT','BILLABLE','TAGS','LOCKDOWN','REPORTING']
+            ROLE_TEAMLEAD: ['ACTIVITIES_TEAMLEAD','PROJECTS_TEAMLEAD','CUSTOMERS_TEAMLEAD','TIMESHEET_OTHER','TIMESHEET','PROFILE','EXPORT','REPORTING']
+            ROLE_ADMIN: ['ACTIVITIES','PROJECTS','CUSTOMERS','TIMESHEET','TIMESHEET_OTHER','PROFILE','TEAMS','EXPORT','LOCKDOWN','REPORTING']
+            ROLE_SUPER_ADMIN: ['ACTIVITIES','PROJECTS','CUSTOMERS','TIMESHEET','TIMESHEET_OTHER','PROFILE','PROFILE_OTHER','USER','TEAMS','EXPORT','LOCKDOWN','REPORTING']
         # mapping a "role name" to an array of "permission names"
         roles:
-            ROLE_USER: ['view_team_member','time_team_project','create_tag','view_reporting']
-            ROLE_TEAMLEAD: ['view_rate_own_timesheet','view_rate_other_timesheet','hourly-rate_own_profile','view_team_member']
-            ROLE_ADMIN: ['hourly-rate_own_profile','edit_exported_timesheet','teams_own_profile','view_team_member','view_all_data','contract_other_profile']
-            ROLE_SUPER_ADMIN: ['hourly-rate_own_profile','hourly-rate_other_profile','roles_own_profile','supervisor_own_profile','system_information','system_configuration','plugins','edit_exported_timesheet','teams_own_profile','view_team_member','upload_invoice_template','view_all_data','contract_other_profile']
+            ROLE_USER: ['view_team_member','time_team_project','view_reporting']
+            ROLE_TEAMLEAD: ['view_team_member']
+            ROLE_ADMIN: ['edit_exported_timesheet','teams_own_profile','view_team_member','view_all_data']
+            ROLE_SUPER_ADMIN: ['roles_own_profile','supervisor_own_profile','system_information','system_configuration','edit_exported_timesheet','teams_own_profile','view_team_member','view_all_data']
 # --------------------------------------------------------------------------------
 
 
